@@ -11,8 +11,8 @@
         }
        body{
         display: flex;
-        flex-direction: column;
-        align-items: center;
+            flex-direction: column;
+            align-items: center;
        }
        
         #toppfelt{
@@ -28,7 +28,7 @@
             flex-direction: row;
 
        } 
-       #toppvenstere{
+       #toppvenstre{
         height: 150px;
         width: 150px;
         display: flex;
@@ -53,19 +53,46 @@
             min-height: 400px;
             background-color:#FFC63E;
             display: flex;
-            flex-direction: row;
+                flex-direction: row;
+            padding: 20px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            
         }
+        #hovedhøyre{
 
+        }
+        #hovedvenstre{
+
+       }
+       #hovedfelt2{
+        height: 300px;
+        width: 100vw;
+        background-color:#1A6695;
+        display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+
+       }
+       .bokser{
+        height: 250px;
+        width: 25%;
+        background-color:#3895C4;
+       }
+       #midten{
+        background-color:#124772;
+       }
+       
     </style>
 </head>
 <body>
     <div id="toppfelt">
-        <div id="toppvenstere"><img src="images/Logo.png" alt="Logo"></div>
+        <div id="toppvenstre"><img src="images/Logo.png" alt="Logo"></div>
         <div id="toppmidt">KAYAK.COM</div>
         <div id="topphøyre">&#9776;</div>
     </div>
     <div id="hovedfelt">
-        <div>
+        <div id="hovedhøyre">
             <h1>"Man observert i mistenkelig kjøretøy"</h1>
             <p>
                 Tidlig mandag morgen kunne Oslo-beboere se noe uvanlig i trafikkbildet: en mann i dress, slips<br> 
@@ -77,10 +104,13 @@
 
             </p>
         </div>
-        <div><img src="images/Kayak.png" alt="Kayak">
-            
-        </div>
-
+        <div id="hovedvenstre"><img src="images/Kayak.png" alt="Kayak"></div>
+    
+    </div>
+    <div id="hovedfelt2">
+    <div class="bokser"></div>
+    <div class="bokser" id="midten"></div>
+    <div class="bokser"></div>
 
     </div>
 </body>
